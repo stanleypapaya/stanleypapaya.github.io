@@ -79,20 +79,34 @@
 
 
 
-<meta name="description" content="部分命令提示行使用方法 ls       123$ls             //罗列当前目录文件$ls -a           //罗列所有文件包括隐藏文件$ls -l           //罗列当前所有文件和详细信息  cat 1$cat 1.txt       //查看1.txt文件内容  mv 1$mv 1.txt 2.txt  //将1.txt重命名为2.txt  touch 12">
+<meta name="description" content="堆排序的过程 首先让我们创建一个数组:    把数组转换为完全二叉树的结构来表示    比较右下角两个叶节点的数字    选出较大的数字和同支上层父节点数字比较，保证大的在上层，不然则交换  比较最下层相邻的两个叶节点的数字     重复相同的步骤    直到底下两层都满足最大堆    在倒数第二层，比较最右边两个节点的数字，重复相同的过程    被换到倒数第二层的数字，仍要和同支最下层的数字比较">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开博大吉">
-<meta property="og:url" content="http://yoursite.com/2018/10/24/开博大吉/index.html">
+<meta property="og:title" content="Heap堆排序">
+<meta property="og:url" content="http://yoursite.com/2018/11/01/Heap堆排序/index.html">
 <meta property="og:site_name" content="黑白世界的博客">
-<meta property="og:description" content="部分命令提示行使用方法 ls       123$ls             //罗列当前目录文件$ls -a           //罗列所有文件包括隐藏文件$ls -l           //罗列当前所有文件和详细信息  cat 1$cat 1.txt       //查看1.txt文件内容  mv 1$mv 1.txt 2.txt  //将1.txt重命名为2.txt  touch 12">
+<meta property="og:description" content="堆排序的过程 首先让我们创建一个数组:    把数组转换为完全二叉树的结构来表示    比较右下角两个叶节点的数字    选出较大的数字和同支上层父节点数字比较，保证大的在上层，不然则交换  比较最下层相邻的两个叶节点的数字     重复相同的步骤    直到底下两层都满足最大堆    在倒数第二层，比较最右边两个节点的数字，重复相同的过程    被换到倒数第二层的数字，仍要和同支最下层的数字比较">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwjmi6bcr5j30qu088gmo.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwjmibsruqj30tq0ao3zd.jpg">
-<meta property="og:updated_time" content="2018-10-26T05:06:35.460Z">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fwsiebu8w3j30qd01nzkf.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwly1fwsiewdkxvj30nm09ejs8.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fwsifg71j1j30o5095756.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwsihlf925j30nl098754.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fwsiie15u1j30nt09ejsa.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwsiizpjvsj30n4099754.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fwsijzmix2j30ne097aaw.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwly1fwsikwjj6dj30n6093t9l.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwsipd5xhmj30nf097757.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwsiridvgoj30nm097aaw.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwly1fwsiubbbkij30o009bgmg.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwly1fwsj10bf0fj30qn09iq3t.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwsj20l7scj30qw01l0sw.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwly1fwsj31emebj30os09d3zc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwsj6ir6l3j30qt0b20tv.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwsjafve4sj30r301z74g.jpg">
+<meta property="og:updated_time" content="2018-11-01T06:22:56.720Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开博大吉">
-<meta name="twitter:description" content="部分命令提示行使用方法 ls       123$ls             //罗列当前目录文件$ls -a           //罗列所有文件包括隐藏文件$ls -l           //罗列当前所有文件和详细信息  cat 1$cat 1.txt       //查看1.txt文件内容  mv 1$mv 1.txt 2.txt  //将1.txt重命名为2.txt  touch 12">
-<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwjmi6bcr5j30qu088gmo.jpg">
+<meta name="twitter:title" content="Heap堆排序">
+<meta name="twitter:description" content="堆排序的过程 首先让我们创建一个数组:    把数组转换为完全二叉树的结构来表示    比较右下角两个叶节点的数字    选出较大的数字和同支上层父节点数字比较，保证大的在上层，不然则交换  比较最下层相邻的两个叶节点的数字     重复相同的步骤    直到底下两层都满足最大堆    在倒数第二层，比较最右边两个节点的数字，重复相同的过程    被换到倒数第二层的数字，仍要和同支最下层的数字比较">
+<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fwsiebu8w3j30qd01nzkf.jpg">
 
 
 
@@ -122,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/24/开博大吉/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/01/Heap堆排序/">
 
 
 
 
 
-  <title>开博大吉 | 黑白世界的博客</title>
+  <title>Heap堆排序 | 黑白世界的博客</title>
   
 
 
@@ -235,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/开博大吉/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/Heap堆排序/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="stanleypapaya">
@@ -252,7 +266,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">开博大吉</h1>
+          <h1 class="post-title" itemprop="name headline">Heap堆排序</h1>
         
 
         <div class="post-meta">
@@ -264,8 +278,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-24T18:14:46+08:00">
-                2018-10-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-01T12:48:58+08:00">
+                2018-11-01
               </time>
             
 
@@ -302,25 +316,66 @@
       
 
       
-        <h2 id="部分命令提示行使用方法"><a href="#部分命令提示行使用方法" class="headerlink" title="部分命令提示行使用方法"></a>部分命令提示行使用方法</h2><ul>
-<li><p>ls      </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ls</span>             //罗列当前目录文件</span><br><span class="line"><span class="variable">$ls</span> -a           //罗列所有文件包括隐藏文件</span><br><span class="line"><span class="variable">$ls</span> -l           //罗列当前所有文件和详细信息</span><br></pre></td></tr></table></figure>
+        <h2 id="堆排序的过程"><a href="#堆排序的过程" class="headerlink" title="堆排序的过程"></a>堆排序的过程</h2><ul>
+<li>首先让我们创建一个数组:</li>
+</ul>
+<p><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fwsiebu8w3j30qd01nzkf.jpg" alt=""></p>
+<ul>
+<li>把数组转换为完全二叉树的结构来表示</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fwsiewdkxvj30nm09ejs8.jpg" alt=""></p>
+<ul>
+<li>比较右下角两个叶节点的数字</li>
+</ul>
+<p><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fwsifg71j1j30o5095756.jpg" alt=""></p>
+<ul>
+<li><p>选出较大的数字和同支上层父节点数字比较，保证大的在上层，不然则交换<br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwsihlf925j30nl098754.jpg" alt=""></p>
 </li>
-<li><p>cat</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> 1.txt       //查看1.txt文件内容</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>mv</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$mv</span> 1.txt 2.txt  //将1.txt重命名为2.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>touch</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$touch</span> 1.txt     //创建1.txt空文件</span><br><span class="line"><span class="variable">$touch</span> 1.txt     //第二次输入时更新1.txt时间</span><br></pre></td></tr></table></figure>
+<li><p>比较最下层相邻的两个叶节点的数字</p>
 </li>
 </ul>
-<h2 id="explainshell网站使用方法"><a href="#explainshell网站使用方法" class="headerlink" title="explainshell网站使用方法"></a>explainshell网站使用方法</h2><p>链接： <a href="https://explainshell.com/" target="_blank" rel="noopener">网址</a></p>
-<p>输入需要查询的命令行，如ls，点击explain</p>
-<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwjmi6bcr5j30qu088gmo.jpg" alt=""></p>
-<p>即可得到命令行的解释</p>
-<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwjmibsruqj30tq0ao3zd.jpg" alt=""></p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fwsiie15u1j30nt09ejsa.jpg" alt=""></p>
+<ul>
+<li>重复相同的步骤</li>
+</ul>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwsiizpjvsj30n4099754.jpg" alt=""></p>
+<ul>
+<li>直到底下两层都满足最大堆</li>
+</ul>
+<p><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fwsijzmix2j30ne097aaw.jpg" alt=""></p>
+<ul>
+<li>在倒数第二层，比较最右边两个节点的数字，重复相同的过程</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fwsikwjj6dj30n6093t9l.jpg" alt=""></p>
+<ul>
+<li>被换到倒数第二层的数字，仍要和同支最下层的数字比较，保证大的数字在上层</li>
+</ul>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwsipd5xhmj30nf097757.jpg" alt=""><br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwsiridvgoj30nm097aaw.jpg" alt=""></p>
+<ul>
+<li>如此不断重复，直到最大的数字被换到最上层的父节点, 并且下几层都满足最大堆</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fwsiubbbkij30o009bgmg.jpg" alt=""></p>
+<ul>
+<li>将最上层父节点的数字和右下角的数字交替位置，并拿出二叉树结构</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fwsj10bf0fj30qn09iq3t.jpg" alt=""></p>
+<ul>
+<li>在数组中最大的数字与最后一个数字交换位置</li>
+</ul>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwsj20l7scj30qw01l0sw.jpg" alt=""></p>
+<ul>
+<li>将二叉树再进行一次最大堆调整，保证最大的数字在最上层</li>
+</ul>
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fwsj31emebj30os09d3zc.jpg" alt=""></p>
+<ul>
+<li>再次将最上层父节点的数字和右下角的数字交替位置，并在数组中交换位置，将最大的数字拿出二叉树结构</li>
+</ul>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwsj6ir6l3j30qt0b20tv.jpg" alt=""></p>
+<ul>
+<li>如此不断重复上述过程，直到所有数字都被拿出二叉树，数字也排序完成</li>
+</ul>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwsjafve4sj30r301z74g.jpg" alt=""></p>
+<p>图片来源：<a href="https://www.cs.usfca.edu/~galles/visualization/HeapSort.html" target="_blank" rel="noopener">https://www.cs.usfca.edu/~galles/visualization/HeapSort.html</a></p>
 
       
     </div>
@@ -345,8 +400,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/24/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/10/30/CSS布局/" rel="next" title="CSS布局">
+                <i class="fa fa-chevron-left"></i> CSS布局
               </a>
             
           </div>
@@ -354,10 +409,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/24/git入门/" rel="prev" title="git入门">
-                git入门 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -471,7 +522,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#部分命令提示行使用方法"><span class="nav-number">1.</span> <span class="nav-text">部分命令提示行使用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#explainshell网站使用方法"><span class="nav-number">2.</span> <span class="nav-text">explainshell网站使用方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#堆排序的过程"><span class="nav-number">1.</span> <span class="nav-text">堆排序的过程</span></a></li></ol></div>
             
 
           </div>

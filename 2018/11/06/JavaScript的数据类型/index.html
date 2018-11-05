@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="黑白世界的博客">
 <meta property="og:description" content="JS数据类型分类JavaScript中的数据类型分为数字（Number），字符串（String），布尔型（Bool），Null，Undefined和对象（Object） NumberJavaScript 内部，所有数字都是以64位浮点数形式储存,整数也是如此。 整数范围 下例展示了Number对象所能表示的最大和最小整数 (详情请参阅 ECMAScript standard, chapter 8.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-05T20:31:56.200Z">
+<meta property="og:updated_time" content="2018-11-05T20:42:07.283Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript的数据类型">
 <meta name="twitter:description" content="JS数据类型分类JavaScript中的数据类型分为数字（Number），字符串（String），布尔型（Bool），Null，Undefined和对象（Object） NumberJavaScript 内部，所有数字都是以64位浮点数形式储存,整数也是如此。 整数范围 下例展示了Number对象所能表示的最大和最小整数 (详情请参阅 ECMAScript standard, chapter 8.">
@@ -304,7 +304,7 @@
 <p><code>整数范围</code></p>
 <p>下例展示了Number对象所能表示的最大和最小整数 (详情请参阅 ECMAScript standard, chapter 8.5 The Number Type):</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">var</span> biggestInt = <span class="number">9007199254740992</span>;</span><br><span class="line">&gt;<span class="keyword">var</span> smallestInt = <span class="number">-9007199254740992</span>;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> biggestInt = <span class="number">9007199254740992</span>;</span><br><span class="line"><span class="keyword">var</span> smallestInt = <span class="number">-9007199254740992</span>;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p><code>数值的进制</code></p>
 <ul>
@@ -315,20 +315,20 @@
 </ul>
 <p>默认情况下，JavaScript 内部会自动将八进制、十六进制、二进制转为十进制</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">0b11</span> <span class="comment">// 3</span></span><br><span class="line">&gt;<span class="number">0o11</span> <span class="comment">// 9</span></span><br><span class="line">&gt;<span class="number">0x11</span> <span class="comment">// 17</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0b11</span> <span class="comment">// 3</span></span><br><span class="line"><span class="number">0o11</span> <span class="comment">// 9</span></span><br><span class="line"><span class="number">0x11</span> <span class="comment">// 17</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p><code>NaN</code></p>
 <p>NaN是 JavaScript 的特殊值，它属于Number类型，但表示“非数字”（Not a Number）</p>
 <ul>
 <li>主要出现在将字符串解析成数字出错的场合</li>
 <li>另外，一些数学函数的运算结果会出现NaN<blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">5</span> - <span class="string">'x'</span> <span class="comment">// NaN</span></span><br><span class="line">&gt;<span class="built_in">Math</span>.log(<span class="number">-1</span>) <span class="comment">// NaN</span></span><br><span class="line">&gt;<span class="number">0</span>/<span class="number">0</span> <span class="comment">// NaN</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span> - <span class="string">'x'</span> <span class="comment">// NaN</span></span><br><span class="line"><span class="built_in">Math</span>.log(<span class="number">-1</span>) <span class="comment">// NaN</span></span><br><span class="line"><span class="number">0</span>/<span class="number">0</span> <span class="comment">// NaN</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
 <h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><p>字符串就是零个或多个排在一起的字符，放在单引号或双引号之中。</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="string">'abc'</span></span><br><span class="line">&gt;<span class="string">"abc"</span></span><br><span class="line">&gt;<span class="string">''</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'abc'</span></span><br><span class="line"><span class="string">"abc"</span></span><br><span class="line"><span class="string">''</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p><code>转义符</code></p>
 <p>（\）在字符串内有特殊含义，用来表示一些特殊字符，所以又称为转义符,在字符串中不占length</p>
@@ -346,7 +346,7 @@
 <p><code>字符串多行书写</code></p>
 <p>在表达字符串时常常因为长度或者易读性问题需要换行，一般连接运算符（+）可以连接多个单行字符串，将长字符串拆成多行书写。输出时为单行</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="string">'happy'</span>+</span><br><span class="line">&gt;<span class="string">' birth'</span>+</span><br><span class="line">&gt;<span class="string">' day'</span> <span class="comment">//happy birth day</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'happy'</span>+</span><br><span class="line"><span class="string">' birth'</span>+</span><br><span class="line"><span class="string">' day'</span> <span class="comment">//happy birth day</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <h3 id="Bool"><a href="#Bool" class="headerlink" title="Bool"></a>Bool</h3><p>布尔值代表“真”和“假”两个状态。“真”用关键字true表示，“假”用关键字false表示。布尔值只有这两个值。</p>
 <p><code>6个falsy值</code></p>
@@ -363,27 +363,27 @@
 <ul>
 <li><p>如果一个变量(非object）没有赋值 -undefined</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">var</span> a = <span class="literal">undefined</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="literal">undefined</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 <li><p>如果有一个对象（object）没有赋值 -null</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">var</span> obj = <span class="literal">null</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="literal">null</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
 <h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p>对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合。</p>
 <p>例如</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">var</span> obj = &#123;</span><br><span class="line">&gt;  <span class="string">'foo'</span>: <span class="string">'Hello'</span>,</span><br><span class="line">&gt;  <span class="string">'bar'</span>: <span class="string">'World'</span></span><br><span class="line">&gt;&#125;;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="string">'foo'</span>: <span class="string">'Hello'</span>,</span><br><span class="line">  <span class="string">'bar'</span>: <span class="string">'World'</span></span><br><span class="line">&#125;;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>在这里 ‘foo’ 和 ‘bar’ 称为键（key）， ‘Hello’ 和 ‘World’ 称为响应的键值（value）<br>如果要取到value，可以有以下的写法：</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;obj[<span class="string">'foo'</span>]</span><br><span class="line">&gt;obj.foo</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">obj[<span class="string">'foo'</span>]</span><br><span class="line">obj.foo</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p>如果需要遍历obj里的键和键值，并把它们打印出来，可以有以下的写法：</p>
 <blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">for</span>（ <span class="keyword">var</span> key <span class="keyword">in</span> obj)&#123;</span><br><span class="line">&gt;   <span class="built_in">console</span>.log(key)</span><br><span class="line">&gt;   <span class="built_in">console</span>.log(obj[key])   </span><br><span class="line">&gt;&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>（ <span class="keyword">var</span> key <span class="keyword">in</span> obj)&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(key)</span><br><span class="line">   <span class="built_in">console</span>.log(obj[key])   </span><br><span class="line">&#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote>
 
       
     </div>

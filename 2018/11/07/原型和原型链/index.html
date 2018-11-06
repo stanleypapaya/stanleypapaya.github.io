@@ -79,21 +79,23 @@
 
 
 
-<meta name="description" content="常见git命令的使用 git init  将当前目录即demo-1初始化为一个本地仓库 该仓库主要用于远端服务器管理代码 保存git历史提交的版本信息，防止冲突   git add .  将当前目录所有变动的文件加到暂存区 查看状态后发现文件名左边有绿色A 绿色A表示文件已经被加到暂存区   git commit -v  将暂存区的文件提交到.git仓库 表示三个文件（index.html, ma">
+<meta name="description" content="原型JavaScript的继承机制就是，原型的对象的所有属性和方法，都能被实例对象共享，以此来节省资源的不必要消耗，请看如下例子：  如上图所示，我们用Object()函数创建了对象a1和a2，并没有对其属性有任何声明，但是a1和a2中都有__proto__的原型属性，也就是所有用Object()实例的对象都能够共享这些属性和方法。而这些属性和方法都占用内存的同一处，并不会因为创建新的实例对象而多">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git入门">
-<meta property="og:url" content="http://yoursite.com/2018/10/24/git入门/index.html">
+<meta property="og:title" content="原型和原型链">
+<meta property="og:url" content="http://yoursite.com/2018/11/07/原型和原型链/index.html">
 <meta property="og:site_name" content="黑白世界的博客">
-<meta property="og:description" content="常见git命令的使用 git init  将当前目录即demo-1初始化为一个本地仓库 该仓库主要用于远端服务器管理代码 保存git历史提交的版本信息，防止冲突   git add .  将当前目录所有变动的文件加到暂存区 查看状态后发现文件名左边有绿色A 绿色A表示文件已经被加到暂存区   git commit -v  将暂存区的文件提交到.git仓库 表示三个文件（index.html, ma">
+<meta property="og:description" content="原型JavaScript的继承机制就是，原型的对象的所有属性和方法，都能被实例对象共享，以此来节省资源的不必要消耗，请看如下例子：  如上图所示，我们用Object()函数创建了对象a1和a2，并没有对其属性有任何声明，但是a1和a2中都有__proto__的原型属性，也就是所有用Object()实例的对象都能够共享这些属性和方法。而这些属性和方法都占用内存的同一处，并不会因为创建新的实例对象而多">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwjo7mw1k9j30fv02wq3a.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwjoiq6zhgj30fw04574u.jpg">
-<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNbRwly1fwjosx099gj30fq04fjs3.jpg">
-<meta property="og:updated_time" content="2018-10-24T14:38:41.373Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwyymk2gggj30jr0hbdip.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwyyu7wru3j30jw016dfu.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwyz8wk72lj30jm06wdgr.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwyzcjqoz9j30jw0bj40k.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNbRwly1fwyzm44smaj30jp046gly.jpg">
+<meta property="og:updated_time" content="2018-11-06T20:43:51.421Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git入门">
-<meta name="twitter:description" content="常见git命令的使用 git init  将当前目录即demo-1初始化为一个本地仓库 该仓库主要用于远端服务器管理代码 保存git历史提交的版本信息，防止冲突   git add .  将当前目录所有变动的文件加到暂存区 查看状态后发现文件名左边有绿色A 绿色A表示文件已经被加到暂存区   git commit -v  将暂存区的文件提交到.git仓库 表示三个文件（index.html, ma">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwjo7mw1k9j30fv02wq3a.jpg">
+<meta name="twitter:title" content="原型和原型链">
+<meta name="twitter:description" content="原型JavaScript的继承机制就是，原型的对象的所有属性和方法，都能被实例对象共享，以此来节省资源的不必要消耗，请看如下例子：  如上图所示，我们用Object()函数创建了对象a1和a2，并没有对其属性有任何声明，但是a1和a2中都有__proto__的原型属性，也就是所有用Object()实例的对象都能够共享这些属性和方法。而这些属性和方法都占用内存的同一处，并不会因为创建新的实例对象而多">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwyymk2gggj30jr0hbdip.jpg">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/24/git入门/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/07/原型和原型链/">
 
 
 
 
 
-  <title>git入门 | 黑白世界的博客</title>
+  <title>原型和原型链 | 黑白世界的博客</title>
   
 
 
@@ -236,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/git入门/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/07/原型和原型链/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="stanleypapaya">
@@ -253,7 +255,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">git入门</h1>
+          <h1 class="post-title" itemprop="name headline">原型和原型链</h1>
         
 
         <div class="post-meta">
@@ -265,8 +267,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-24T22:04:23+08:00">
-                2018-10-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-07T03:28:00+08:00">
+                2018-11-07
               </time>
             
 
@@ -303,29 +305,18 @@
       
 
       
-        <h2 id="常见git命令的使用"><a href="#常见git命令的使用" class="headerlink" title="常见git命令的使用"></a>常见git命令的使用</h2><ul>
-<li><p>git init<br><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwjo7mw1k9j30fv02wq3a.jpg" alt=""></p>
-<ul>
-<li>将当前目录即demo-1初始化为一个本地仓库</li>
-<li>该仓库主要用于远端服务器管理代码</li>
-<li>保存git历史提交的版本信息，防止冲突</li>
-</ul>
-</li>
-<li><p>git add .<br><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwjoiq6zhgj30fw04574u.jpg" alt=""></p>
-<ul>
-<li>将当前目录所有变动的文件加到暂存区</li>
-<li>查看状态后发现文件名左边有绿色A</li>
-<li>绿色A表示文件已经被加到暂存区</li>
-</ul>
-</li>
-<li><p>git commit -v<br><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fwjosx099gj30fq04fjs3.jpg" alt=""></p>
-<ul>
-<li>将暂存区的文件提交到.git仓库</li>
-<li>表示三个文件（index.html, main.js, style.css)被提交</li>
-<li>提交的信息是‘first commit’</li>
-</ul>
-</li>
-</ul>
+        <h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><p>JavaScript的继承机制就是，<code>原型</code>的对象的所有属性和方法，都能被实例对象共享，以此来节省资源的不必要消耗，请看如下例子：</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwyymk2gggj30jr0hbdip.jpg" alt=""></p>
+<p>如上图所示，我们用Object()函数创建了对象a1和a2，并没有对其属性有任何声明，但是a1和a2中都有<code>__proto__</code>的原型属性，也就是所有用Object()实例的对象都能够共享这些属性和方法。而这些属性和方法都占用内存的同一处，并不会因为创建新的实例对象而多占用资源，a1.toString()=== a2.toString()可以证明这一点。</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwyyu7wru3j30jw016dfu.jpg" alt=""></p>
+<h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p>然而，用Number()实例的对象有一些Number对象特有的属性和方法，比如toFixed(), toExponential()，这些并不需要被Object()实例的对象所共享，Number()实例的对象有自己特有的原型属性和方法，如下图：</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwyz8wk72lj30jm06wdgr.jpg" alt=""></p>
+<p>同时作为对象的Number对象也同时共享Object原型属性和方法</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwyzcjqoz9j30jw0bj40k.jpg" alt=""></p>
+<p>因此，如果需要调用n1的Object原型属性和方法，就要先从<code>n1.__proto__</code>即<code>Number.prototype</code>中去搜索，然后再到<code>n1.__proto__.__proto__</code>即<code>Object.prototype</code>中搜索，这样的链式的原型属性和方法被称为<code>原型链</code>,String()实例的对象也有相似的结构：</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fwyzm44smaj30jp046gly.jpg" alt=""></p>
+<h2 id="普通的例子"><a href="#普通的例子" class="headerlink" title="普通的例子"></a>普通的例子</h2><p>上述对原型和原型链的说明是基于浏览器内置的函数，下面举一个普通的构造函数：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vehicle</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name</span><br><span class="line">&#125;</span><br><span class="line">Vehicle.prototype.color = <span class="string">'black'</span></span><br><span class="line">Vehicle.prototype.honk = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">' is honking'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> car1 = <span class="keyword">new</span> Vehicle(<span class="string">'Toyota'</span>)</span><br><span class="line"><span class="keyword">var</span> car2 = <span class="keyword">new</span> Vehicle(<span class="string">'Audi'</span>)</span><br><span class="line"></span><br><span class="line">car1.color <span class="comment">// "black"</span></span><br><span class="line">car2.color <span class="comment">// "black"</span></span><br><span class="line">Vehicle.prototype.color <span class="comment">// "black"</span></span><br><span class="line">car1.honk() <span class="comment">//Toyota is honking</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -350,8 +341,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/24/开博大吉/" rel="next" title="开博大吉">
-                <i class="fa fa-chevron-left"></i> 开博大吉
+              <a href="/2018/11/06/JavaScript的数据类型转换/" rel="next" title="JavaScript的数据类型转换">
+                <i class="fa fa-chevron-left"></i> JavaScript的数据类型转换
               </a>
             
           </div>
@@ -359,10 +350,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/26/http入门/" rel="prev" title="http入门">
-                http入门 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,7 +463,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#常见git命令的使用"><span class="nav-number">1.</span> <span class="nav-text">常见git命令的使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原型"><span class="nav-number">1.</span> <span class="nav-text">原型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原型链"><span class="nav-number">2.</span> <span class="nav-text">原型链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#普通的例子"><span class="nav-number">3.</span> <span class="nav-text">普通的例子</span></a></li></ol></div>
             
 
           </div>

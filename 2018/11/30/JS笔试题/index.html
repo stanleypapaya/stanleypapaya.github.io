@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1. 填空,请填写所有=== 右边的代码123456789101112131415161718var object = &amp;#123;&amp;#125;object.__proto__ === Object.prototypevar fn = function()&amp;#123;&amp;#125;fn.__proto__ === Function.prototypefn.__proto__.__proto__ ==">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS笔试题">
+<meta property="og:url" content="http://yoursite.com/2018/11/30/JS笔试题/index.html">
+<meta property="og:site_name" content="黑白世界的博客">
+<meta property="og:description" content="1. 填空,请填写所有=== 右边的代码123456789101112131415161718var object = &amp;#123;&amp;#125;object.__proto__ === Object.prototypevar fn = function()&amp;#123;&amp;#125;fn.__proto__ === Function.prototypefn.__proto__.__proto__ ==">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-30T14:02:50.227Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS笔试题">
+<meta name="twitter:description" content="1. 填空,请填写所有=== 右边的代码123456789101112131415161718var object = &amp;#123;&amp;#125;object.__proto__ === Object.prototypevar fn = function()&amp;#123;&amp;#125;fn.__proto__ === Function.prototypefn.__proto__.__proto__ ==">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/30/JS笔试题/">
+
+
+
+
+
+  <title>JS笔试题 | 黑白世界的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黑白世界的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/30/JS笔试题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="stanleypapaya">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黑白世界的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JS笔试题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T19:53:42+08:00">
+                2018-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="1-填空-请填写所有-右边的代码"><a href="#1-填空-请填写所有-右边的代码" class="headerlink" title="1. 填空,请填写所有=== 右边的代码"></a>1. 填空,请填写所有=== 右边的代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">var object = &#123;&#125;</span><br><span class="line">object.__proto__ === Object.prototype</span><br><span class="line"></span><br><span class="line">var fn = function()&#123;&#125;</span><br><span class="line">fn.__proto__ === Function.prototype</span><br><span class="line">fn.__proto__.__proto__ === Object.prototype</span><br><span class="line"></span><br><span class="line">var array = []</span><br><span class="line">array.__proto__ === Array.prototype</span><br><span class="line">array.__proto__.__proto__ === Object.prototype</span><br><span class="line"></span><br><span class="line">Function.__proto__ === Function.prototype</span><br><span class="line">Array.__proto__ === Function.prototype</span><br><span class="line">Object.__proto__ === Function.prototype</span><br><span class="line"></span><br><span class="line">true.__proto__ === Boolean.prototype</span><br><span class="line"></span><br><span class="line">Function.prototype.__proto__ === Object.prototype</span><br></pre></td></tr></table></figure>
+<h3 id="2-new-fn-会执行-fn，并打印出-this，请问这个-this-有哪些属性？这个-this-的原型有哪些属性？"><a href="#2-new-fn-会执行-fn，并打印出-this，请问这个-this-有哪些属性？这个-this-的原型有哪些属性？" class="headerlink" title="2. new fn() 会执行 fn，并打印出 this，请问这个 this 有哪些属性？这个 this 的原型有哪些属性？"></a>2. new fn() 会执行 fn，并打印出 this，请问这个 this 有哪些属性？这个 this 的原型有哪些属性？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function fn()&#123;</span><br><span class="line">    console.log(this)</span><br><span class="line">&#125;</span><br><span class="line">new fn()</span><br></pre></td></tr></table></figure>
+<p>this 自身没有属性（只有一个隐藏的 <strong>proto</strong> 属性）<br>this 的原型是 fn.prototype，只有一个属性 constructor，且 constructor === fn（另外还有一个隐藏属性 <strong>proto</strong>，指向 Object.prototype）</p>
+<h3 id="3-JSON-和-JavaScript-是什么关系？-JSON-和-JavaScript-的区别有哪些？"><a href="#3-JSON-和-JavaScript-是什么关系？-JSON-和-JavaScript-的区别有哪些？" class="headerlink" title="3. JSON 和 JavaScript 是什么关系？ JSON 和 JavaScript 的区别有哪些？"></a>3. JSON 和 JavaScript 是什么关系？ JSON 和 JavaScript 的区别有哪些？</h3><p>关系：JSON 是一门抄袭/借鉴 JavaScript 的语言，同时也是一种数据交互格式，JSON 是 JavaScript 的子集（或者说 JSON 只抄袭了一部分 JavaScript 语法，而且没有新增任何原创的语法）</p>
+<p>区别：JSON 不支持函数、undefined、变量、引用、单引号字符串、对象的key不支持单引号也不支持不加引号、没有内置的 Date、Math、RegExp 等。<br>而 JavaScript 全都支持。</p>
+<table>
+<thead>
+<tr>
+<th>JavaScript</th>
+<th>JSON                    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>undefined</td>
+<td>没有undefined                                      </td>
+</tr>
+<tr>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>[‘a’,’b’]</td>
+<td>[“a”,”b”]</td>
+</tr>
+<tr>
+<td>Funtion</td>
+<td>没有Function</td>
+</tr>
+<tr>
+<td>{name:’frank’}</td>
+<td>{“name”:”frank”}</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>没有Variable（变量）</td>
+</tr>
+<tr>
+<td>“hi”/‘hi’</td>
+<td>“hi”</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-前端-MVC-是什么？请用代码大概说明-MVC-三个对象分别有哪些重要属性和方法。"><a href="#4-前端-MVC-是什么？请用代码大概说明-MVC-三个对象分别有哪些重要属性和方法。" class="headerlink" title="4. 前端 MVC 是什么？请用代码大概说明 MVC 三个对象分别有哪些重要属性和方法。"></a>4. 前端 MVC 是什么？请用代码大概说明 MVC 三个对象分别有哪些重要属性和方法。</h3><p>MVC 是一种设计模式（或者软件架构），把系统分为三层：Model数据、View视图和Controller控制器。<br>Model 数据管理，包括数据逻辑、数据请求、数据存储等功能。前端 Model 主要负责 AJAX 请求或者 LocalStorage 存储<br>View 负责用户界面，前端 View 主要负责 HTML 渲染。<br>Controller 负责处理 View 的事件，并更新 Model；也负责监听 Model 的变化，并更新 View，Controller 控制其他的所有流程。</p>
+<p>代码说明<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var model = &#123;</span><br><span class="line">    data: null,</span><br><span class="line">    init()&#123;&#125;</span><br><span class="line">    fetch()&#123;&#125;</span><br><span class="line">    save()&#123;&#125;</span><br><span class="line">    update()&#123;&#125;</span><br><span class="line">    delete()&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">view = &#123;</span><br><span class="line">    init() &#123;&#125;</span><br><span class="line">    template: &apos;&lt;h1&gt;hi&lt;/h1&apos;&gt;</span><br><span class="line">&#125;</span><br><span class="line">controller = &#123;</span><br><span class="line">    view: null,</span><br><span class="line">    model: null,</span><br><span class="line">    init(view, model)&#123;</span><br><span class="line">        this.view = view</span><br><span class="line">        this.model = model</span><br><span class="line">        this.bindEvents()</span><br><span class="line">    &#125;</span><br><span class="line">    render()&#123;</span><br><span class="line">        this.view.querySelector(&apos;name&apos;).innerText = this.model.data.name</span><br><span class="line">    &#125;,</span><br><span class="line">    bindEvents()&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="5-在ES5中如何用函数模拟一个类"><a href="#5-在ES5中如何用函数模拟一个类" class="headerlink" title="5. 在ES5中如何用函数模拟一个类"></a>5. 在ES5中如何用函数模拟一个类</h3><p>ES5中用构造函数可以模拟一个类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function Animal(name)&#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面构造函数模拟了一个类，函数名是Animal，当需要实例一个对象是则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var panda = new Animal(&apos;panda&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>需要添加类的属性或方法时，则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Animal.prototype.color = [&apos;white&apos;, &apos;black&apos;]</span><br><span class="line">Animal.prototype.walk = function()&#123;</span><br><span class="line">    console.log(this.name + &apos; is walking&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这些共有属性称为原型对象，可以被任何实例调用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">panda.color // &apos;white&apos;, &apos;black&apos;</span><br><span class="line">panda.walk // &apos;panda is walking&apos;</span><br></pre></td></tr></table></figure></p>
+<h3 id="6-用过-Promise-吗？举例说明。-如果要你创建一个返回-Promise-对象的函数，你会怎么写？举例说明。"><a href="#6-用过-Promise-吗？举例说明。-如果要你创建一个返回-Promise-对象的函数，你会怎么写？举例说明。" class="headerlink" title="6. 用过 Promise 吗？举例说明。 如果要你创建一个返回 Promise 对象的函数，你会怎么写？举例说明。"></a>6. 用过 Promise 吗？举例说明。 如果要你创建一个返回 Promise 对象的函数，你会怎么写？举例说明。</h3><p>在使用Ajax发送请求时需要用到Promise，需要在请求成功或失败时返回相应的对象。代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">$.ajax = function(&#123; url, method, body &#125;)&#123;</span><br><span class="line">    return new Promise(function(resolve, reject)&#123;</span><br><span class="line">        let xhr = new XMLHttpRequest()</span><br><span class="line">        xhr.open(method, url)</span><br><span class="line">        xhr.send(body)</span><br><span class="line">        xhr.onreadystatechange = () =&gt;&#123;</span><br><span class="line">            if(xhr.readyState === 4)&#123;</span><br><span class="line">                if(xhr.status &gt;= 200 &amp;&amp; xhr.status &lt; 300)&#123;</span><br><span class="line">                    resolve.call(undefined, xhr)</span><br><span class="line">                &#125; else if(xhr.status &gt;= 400)&#123;</span><br><span class="line">                    reject.call(undefined, xhr)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">button.addEventListener(&apos;click&apos;, (e) =&gt; &#123;</span><br><span class="line">    let promise = $.ajax(&#123;</span><br><span class="line">        url: &quot;/xxx&quot;,</span><br><span class="line">        method: &quot;post&quot;,</span><br><span class="line">        body: &quot;第四部分“,       </span><br><span class="line">    &#125;)</span><br><span class="line">    </span><br><span class="line">    promise.then(</span><br><span class="line">        (text) =&gt; &#123;console.log(text)&#125;,</span><br><span class="line">        (xhr) =&gt; &#123;console.log(xhr)&#125;</span><br><span class="line">    )</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>参考答案：<br>用过 Promise，比如 jQuery 或者 axios 的 AJAX 功能，都返回的是 Promise 对象。<br>$.ajax({url:’/xxx’, method:’get’}).then(success1, error1).then(success2, error2)<br>如果我自己创建 Promise 对象，我会这么写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function asyncMethod()&#123;</span><br><span class="line">    return new Promise(function (resolve, reject)&#123;</span><br><span class="line">        setTimeout(function()&#123;</span><br><span class="line">            成功则调用 resolve</span><br><span class="line">            失败则调用 reject</span><br><span class="line">        &#125;,3000)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/23/面试题/" rel="next" title="面试题">
+                <i class="fa fa-chevron-left"></i> 面试题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">stanleypapaya</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-填空-请填写所有-右边的代码"><span class="nav-number">1.</span> <span class="nav-text">1. 填空,请填写所有=== 右边的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-new-fn-会执行-fn，并打印出-this，请问这个-this-有哪些属性？这个-this-的原型有哪些属性？"><span class="nav-number">2.</span> <span class="nav-text">2. new fn() 会执行 fn，并打印出 this，请问这个 this 有哪些属性？这个 this 的原型有哪些属性？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-JSON-和-JavaScript-是什么关系？-JSON-和-JavaScript-的区别有哪些？"><span class="nav-number">3.</span> <span class="nav-text">3. JSON 和 JavaScript 是什么关系？ JSON 和 JavaScript 的区别有哪些？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-前端-MVC-是什么？请用代码大概说明-MVC-三个对象分别有哪些重要属性和方法。"><span class="nav-number">4.</span> <span class="nav-text">4. 前端 MVC 是什么？请用代码大概说明 MVC 三个对象分别有哪些重要属性和方法。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-在ES5中如何用函数模拟一个类"><span class="nav-number">5.</span> <span class="nav-text">5. 在ES5中如何用函数模拟一个类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-用过-Promise-吗？举例说明。-如果要你创建一个返回-Promise-对象的函数，你会怎么写？举例说明。"><span class="nav-number">6.</span> <span class="nav-text">6. 用过 Promise 吗？举例说明。 如果要你创建一个返回 Promise 对象的函数，你会怎么写？举例说明。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stanleypapaya</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
